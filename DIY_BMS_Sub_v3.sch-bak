@@ -727,9 +727,7 @@ NoConn ~ 10400 5250
 NoConn ~ 10400 4950
 NoConn ~ 10400 5050
 NoConn ~ 10400 5150
-Wire Wire Line
-	10500 6550 10400 6550
-Text GLabel 10500 6550 2    50   Input ~ 0
+Text GLabel 10800 6550 2    50   Input ~ 0
 HSEL
 Wire Wire Line
 	3250 1550 3350 1550
@@ -842,24 +840,232 @@ AGND
 Wire Wire Line
 	11350 8150 11350 8100
 Wire Wire Line
-	10400 8100 11350 8100
+	10400 8100 11000 8100
 Wire Wire Line
 	10400 8000 10400 7900
 Wire Wire Line
 	12050 7950 12050 7900
-Wire Wire Line
-	12050 7900 10400 7900
 Connection ~ 10400 7900
 Wire Wire Line
-	10400 8650 11350 8650
+	10400 8650 10550 8650
 Wire Wire Line
 	11350 8450 11350 8650
 Connection ~ 11350 8650
-Wire Wire Line
-	11350 8650 12050 8650
 Wire Wire Line
 	12050 8250 12050 8650
 Connection ~ 12050 8650
 Wire Wire Line
 	12050 8650 12150 8650
+Wire Wire Line
+	10400 6550 10800 6550
+$Comp
+L Device:C C?
+U 1 1 5FB3481A
+P 10550 8450
+AR Path="/5FAA7870/5FB3481A" Ref="C?"  Part="1" 
+AR Path="/5FAF2B15/5FB3481A" Ref="C?"  Part="1" 
+AR Path="/5FB201DB/5FB3481A" Ref="C?"  Part="1" 
+AR Path="/5FB24C66/5FB3481A" Ref="C?"  Part="1" 
+AR Path="/5FA9BBC5/5FB3481A" Ref="C?"  Part="1" 
+AR Path="/5FA9D4E1/5FB3481A" Ref="C?"  Part="1" 
+AR Path="/5FB3481A" Ref="C22"  Part="1" 
+F 0 "C22" H 10350 8400 50  0000 L CNN
+F 1 "10u" H 10300 8500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10588 8300 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/murata_03052018_GRM_Series_1-1310166.pdf" H 10550 8450 50  0001 C CNN
+F 4 "81-GRM21BR71A106KA3K" H 10550 8450 50  0001 C CNN "DPN"
+	1    10550 8450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10550 8300 10400 8300
+Wire Wire Line
+	10550 8600 10550 8650
+Connection ~ 10550 8650
+Wire Wire Line
+	10550 8650 11000 8650
+$Comp
+L Device:C C?
+U 1 1 5FB872FA
+P 11000 8300
+AR Path="/5FAA7870/5FB872FA" Ref="C?"  Part="1" 
+AR Path="/5FAF2B15/5FB872FA" Ref="C?"  Part="1" 
+AR Path="/5FB201DB/5FB872FA" Ref="C?"  Part="1" 
+AR Path="/5FB24C66/5FB872FA" Ref="C?"  Part="1" 
+AR Path="/5FA9BBC5/5FB872FA" Ref="C?"  Part="1" 
+AR Path="/5FA9D4E1/5FB872FA" Ref="C?"  Part="1" 
+AR Path="/5FB872FA" Ref="C21"  Part="1" 
+F 0 "C21" H 10750 8250 50  0000 L CNN
+F 1 "2.2u" H 10700 8350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11038 8150 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/MLCC-1837944.pdf" H 11000 8300 50  0001 C CNN
+F 4 "187-CL21B225KPFNNNE" H 11000 8300 50  0001 C CNN "DPN"
+	1    11000 8300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11350 8650 11700 8650
+Wire Wire Line
+	12050 7900 11700 7900
+Wire Wire Line
+	11000 8150 11000 8100
+Connection ~ 11000 8100
+Wire Wire Line
+	11000 8100 11350 8100
+Wire Wire Line
+	11000 8450 11000 8650
+Connection ~ 11000 8650
+Wire Wire Line
+	11000 8650 11350 8650
+$Comp
+L Device:C C?
+U 1 1 5FBB4DBE
+P 11700 8100
+AR Path="/5FAA7870/5FBB4DBE" Ref="C?"  Part="1" 
+AR Path="/5FAF2B15/5FBB4DBE" Ref="C?"  Part="1" 
+AR Path="/5FB201DB/5FBB4DBE" Ref="C?"  Part="1" 
+AR Path="/5FB24C66/5FBB4DBE" Ref="C?"  Part="1" 
+AR Path="/5FA9BBC5/5FBB4DBE" Ref="C?"  Part="1" 
+AR Path="/5FA9D4E1/5FBB4DBE" Ref="C?"  Part="1" 
+AR Path="/5FBB4DBE" Ref="C20"  Part="1" 
+F 0 "C20" H 11450 8050 50  0000 L CNN
+F 1 "2.2u" H 11400 8150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11738 7950 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/MLCC-1837944.pdf" H 11700 8100 50  0001 C CNN
+F 4 "187-CL21B225KPFNNNE" H 11700 8100 50  0001 C CNN "DPN"
+	1    11700 8100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11700 7950 11700 7900
+Connection ~ 11700 7900
+Wire Wire Line
+	11700 7900 10400 7900
+Wire Wire Line
+	11700 8250 11700 8650
+Connection ~ 11700 8650
+Wire Wire Line
+	11700 8650 12050 8650
+Text GLabel 12150 5100 2    50   UnSpc ~ 0
+AGND
+Wire Wire Line
+	12150 5100 10750 5100
+Wire Wire Line
+	10400 5400 10750 5400
+Text GLabel 12150 5400 2    50   UnSpc ~ 0
+5VDC
+Wire Wire Line
+	12150 5400 12050 5400
+Connection ~ 10750 5400
+$Comp
+L Device:C C?
+U 1 1 5FC2B693
+P 10750 5600
+AR Path="/5FAA7870/5FC2B693" Ref="C?"  Part="1" 
+AR Path="/5FAF2B15/5FC2B693" Ref="C?"  Part="1" 
+AR Path="/5FB201DB/5FC2B693" Ref="C?"  Part="1" 
+AR Path="/5FB24C66/5FC2B693" Ref="C?"  Part="1" 
+AR Path="/5FA9BBC5/5FC2B693" Ref="C?"  Part="1" 
+AR Path="/5FA9D4E1/5FC2B693" Ref="C?"  Part="1" 
+AR Path="/5FC2B693" Ref="C24"  Part="1" 
+F 0 "C24" H 10550 5550 50  0000 L CNN
+F 1 "47p" H 10500 5650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10788 5450 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/KEM_C1003_C0G_SMD-1101588.pdf" H 10750 5600 50  0001 C CNN
+F 4 "80-C0805C470J5G" H 10750 5600 50  0001 C CNN "DPN"
+	1    10750 5600
+	-1   0    0    1   
+$EndComp
+NoConn ~ 10400 5500
+NoConn ~ 10400 5600
+Wire Wire Line
+	10400 5750 10750 5750
+Wire Wire Line
+	10750 5450 10750 5400
+Text GLabel 2200 1500 2    50   Input ~ 0
+Temp-
+Text GLabel 2200 1400 2    50   Input ~ 0
+Temp+
+Wire Wire Line
+	2200 1500 2100 1500
+Wire Wire Line
+	2200 1400 2100 1400
+Text GLabel 12150 5750 2    50   Input ~ 0
+Temp-
+Text GLabel 12150 5550 2    50   Input ~ 0
+Temp+
+$Comp
+L Device:R R38
+U 1 1 5FC9A59E
+P 11000 5850
+F 0 "R38" V 10900 5850 50  0000 C CNN
+F 1 "1K82" V 10800 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10930 5850 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/crxxxxx-1858361.pdf" H 11000 5850 50  0001 C CNN
+F 4 "652-CR0603FX-1821ELF" V 11000 5850 50  0001 C CNN "DPN"
+	1    11000 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12150 5550 12050 5550
+Wire Wire Line
+	12050 5550 12050 5400
+Connection ~ 12050 5400
+Wire Wire Line
+	12050 5400 10750 5400
+Wire Wire Line
+	10400 5850 10850 5850
+Wire Wire Line
+	11150 5850 11300 5850
+Wire Wire Line
+	11300 5850 11300 5750
+Wire Wire Line
+	11300 5750 10750 5750
+Connection ~ 10750 5750
+$Comp
+L Device:R R37
+U 1 1 5FD11342
+P 11550 5750
+F 0 "R37" V 11450 5750 50  0000 C CNN
+F 1 "1K47" V 11350 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11480 5750 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/crxxxxx-1858361%20(1).pdf" H 11550 5750 50  0001 C CNN
+F 4 "652-CR0603FX-1471ELF" V 11550 5750 50  0001 C CNN "DPN"
+	1    11550 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11700 5750 12150 5750
+Wire Wire Line
+	11400 5750 11300 5750
+Connection ~ 11300 5750
+$Comp
+L Device:C C?
+U 1 1 5FD374E9
+P 10750 5250
+AR Path="/5FAA7870/5FD374E9" Ref="C?"  Part="1" 
+AR Path="/5FAF2B15/5FD374E9" Ref="C?"  Part="1" 
+AR Path="/5FB201DB/5FD374E9" Ref="C?"  Part="1" 
+AR Path="/5FB24C66/5FD374E9" Ref="C?"  Part="1" 
+AR Path="/5FA9BBC5/5FD374E9" Ref="C?"  Part="1" 
+AR Path="/5FA9D4E1/5FD374E9" Ref="C?"  Part="1" 
+AR Path="/5FD374E9" Ref="C23"  Part="1" 
+F 0 "C23" H 10500 5200 50  0000 L CNN
+F 1 "2.2u" H 10450 5300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10788 5100 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/MLCC-1837944.pdf" H 10750 5250 50  0001 C CNN
+F 4 "187-CL21B225KPFNNNE" H 10750 5250 50  0001 C CNN "DPN"
+	1    10750 5250
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	1000 2700 3600 2700
+Wire Notes Line
+	3600 2700 3600 3650
+Wire Notes Line
+	3600 3650 1000 3650
+Wire Notes Line
+	1000 2700 1000 3650
+Text Notes 1150 2950 0    50   ~ 0
+NTC\n81-NXFT15XH103FA2B00\n
 $EndSCHEMATC
