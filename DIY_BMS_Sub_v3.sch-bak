@@ -19,7 +19,7 @@ U 1 1 5FAACF24
 P 1650 2050
 F 0 "J1" H 1700 2667 50  0000 C CNN
 F 1 "Conn_02x10_Top_Bottom" H 1700 2576 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-20A2_2x10_P4.20mm_Horizontal" H 1650 2050 50  0001 C CNN
+F 2 "#_Connectors:Molex_Mini-Fit_Jr_5569-20A2_2x10_P4.20mm_Horizontal_with3d" H 1650 2050 50  0001 C CNN
 F 3 "~" H 1650 2050 50  0001 C CNN
 	1    1650 2050
 	1    0    0    -1  
@@ -68,7 +68,7 @@ U 1 1 5FA8DAB6
 P 3400 2000
 F 0 "J2" H 3450 2417 50  0000 C CNN
 F 1 "Conn_02x05_Top_Bottom" H 3450 2326 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-10A2_2x05_P4.20mm_Horizontal" H 3400 2000 50  0001 C CNN
+F 2 "#_Connectors:Molex_Mini-Fit_Jr_5569-10A2_2x05_P4.20mm_Horizontal_with3d" H 3400 2000 50  0001 C CNN
 F 3 "~" H 3400 2000 50  0001 C CNN
 	1    3400 2000
 	1    0    0    -1  
@@ -287,7 +287,7 @@ U 1 1 5FB150FE
 P 5100 1950
 F 0 "J3" H 5150 2267 50  0000 C CNN
 F 1 "Conn_02x04_Top_Bottom" H 5150 2176 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal" H 5100 1950 50  0001 C CNN
+F 2 "#_Connectors:Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal_with3D" H 5100 1950 50  0001 C CNN
 F 3 "~" H 5100 1950 50  0001 C CNN
 	1    5100 1950
 	1    0    0    -1  
@@ -298,7 +298,7 @@ U 1 1 5FB166EE
 P 7100 1950
 F 0 "J4" H 7150 2267 50  0000 C CNN
 F 1 "Conn_02x04_Top_Bottom" H 7150 2176 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal" H 7100 1950 50  0001 C CNN
+F 2 "#_Connectors:Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal_with3D" H 7100 1950 50  0001 C CNN
 F 3 "~" H 7100 1950 50  0001 C CNN
 	1    7100 1950
 	1    0    0    -1  
@@ -1070,8 +1070,4 @@ Wire Notes Line
 	850  2850 8000 2850
 Wire Notes Line
 	850  850  8000 850 
-Wire Wire Line
-	1450 1950 1350 1950
-Text GLabel 1350 1950 0    50   Input ~ 0
-S0
 $EndSCHEMATC
