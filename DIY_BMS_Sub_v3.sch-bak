@@ -73,8 +73,6 @@ F 3 "~" H 3400 2000 50  0001 C CNN
 	1    3400 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 1800 2    50   Input ~ 0
-HSEL
 Wire Notes Line
 	850  850  850  2850
 Text Notes 850  850  0    50   ~ 0
@@ -85,8 +83,6 @@ Text GLabel 3800 1900 2    50   Input ~ 0
 CS_H
 Wire Wire Line
 	3800 1900 3700 1900
-Wire Wire Line
-	3800 1800 3700 1800
 Text GLabel 10350 7100 2    50   Input ~ 0
 SDI_H
 Text GLabel 3100 1900 0    50   Input ~ 0
@@ -404,8 +400,6 @@ Connection ~ 1500 5650
 Wire Wire Line
 	1500 5650 1600 5650
 Wire Wire Line
-	1500 5200 7000 5200
-Wire Wire Line
 	7500 5200 7500 5300
 Wire Wire Line
 	7500 5300 7600 5300
@@ -465,7 +459,7 @@ Wire Wire Line
 Text GLabel 8550 4400 1    50   Input ~ 0
 CONV_N
 Wire Wire Line
-	8550 4400 8550 5000
+	8550 4400 8550 4700
 Text GLabel 5500 1850 2    50   Input ~ 0
 CONV_N
 Wire Wire Line
@@ -544,14 +538,8 @@ Wire Wire Line
 	8150 3600 7000 3600
 Wire Wire Line
 	7000 3600 7000 3750
-Connection ~ 7000 5200
-Wire Wire Line
-	7000 5200 7500 5200
 Wire Wire Line
 	7100 4050 7000 4050
-Connection ~ 7000 4050
-Wire Wire Line
-	7000 4050 7000 5200
 Wire Wire Line
 	7450 3900 7000 3900
 Connection ~ 7000 3900
@@ -588,18 +576,6 @@ F 4 "667-EXB-2HV102JV" H 9000 10600 50  0001 C CNN "DPN"
 $EndComp
 Wire Wire Line
 	9300 10250 9300 10400
-$Comp
-L Switch:SW_DIP_x01 SW1
-U 1 1 5FBECB4C
-P 8150 10100
-F 0 "SW1" H 8150 10367 50  0000 C CNN
-F 1 "SW_DIP_x01" H 8150 10276 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile" H 8150 10100 50  0001 C CNN
-F 3 "file:///C:/Users/HenkHenk/Downloads/ds01_254-1777712%20(2).pdf" H 8150 10100 50  0001 C CNN
-F 4 "490-DS01-254-L-01BE" H 8150 10100 50  0001 C CNN "DPN"
-	1    8150 10100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8600 10250 8600 10400
 Wire Wire Line
@@ -656,17 +632,8 @@ Wire Wire Line
 	9200 10800 9200 10900
 Wire Wire Line
 	9300 10800 9300 10900
-Wire Wire Line
-	8550 9750 8550 10100
-Text GLabel 7750 10100 0    50   UnSpc ~ 0
+Text GLabel 4950 11050 0    50   UnSpc ~ 0
 AGND
-Wire Wire Line
-	7750 10100 7850 10100
-Wire Wire Line
-	8450 10100 8550 10100
-Connection ~ 8550 10100
-Wire Wire Line
-	8550 10100 8550 10250
 Wire Wire Line
 	9350 10250 9350 9750
 Wire Wire Line
@@ -723,7 +690,7 @@ NoConn ~ 10250 5500
 NoConn ~ 10250 5200
 NoConn ~ 10250 5300
 NoConn ~ 10250 5400
-Text GLabel 10650 6800 2    50   Input ~ 0
+Text GLabel 11750 6650 2    50   Input ~ 0
 HSEL
 Wire Wire Line
 	3100 1800 3200 1800
@@ -852,8 +819,6 @@ Wire Wire Line
 Connection ~ 11900 8900
 Wire Wire Line
 	11900 8900 12000 8900
-Wire Wire Line
-	10250 6800 10650 6800
 $Comp
 L Device:C C?
 U 1 1 5FB3481A
@@ -1070,4 +1035,113 @@ Wire Notes Line
 	850  2850 8000 2850
 Wire Notes Line
 	850  850  8000 850 
+Text GLabel 5750 10950 2    50   Input ~ 0
+SW_Host
+Text GLabel 5750 11050 2    50   Input ~ 0
+SW_Bottom
+Text GLabel 5750 10750 2    50   Input ~ 0
+SW_Top
+Wire Wire Line
+	5750 10750 5650 10750
+Wire Wire Line
+	5750 10950 5650 10950
+Wire Wire Line
+	5750 11050 5650 11050
+Wire Wire Line
+	4950 11050 5050 11050
+Wire Wire Line
+	8550 9750 8550 10150
+Text GLabel 8450 10150 0    50   Input ~ 0
+SW_Bottom
+Wire Wire Line
+	8450 10150 8550 10150
+Connection ~ 8550 10150
+Wire Wire Line
+	8550 10150 8550 10250
+Wire Wire Line
+	5050 10950 4950 10950
+Wire Wire Line
+	5050 10850 4950 10850
+Text GLabel 4950 10950 0    50   UnSpc ~ 0
+AGND
+Text GLabel 10950 6650 2    50   Input ~ 0
+SW_Host
+$Comp
+L Device:R R?
+U 1 1 5FCE7782
+P 11100 6800
+AR Path="/5FAF2B15/5FCE7782" Ref="R?"  Part="1" 
+AR Path="/5FB201DB/5FCE7782" Ref="R?"  Part="1" 
+AR Path="/5FB24C66/5FCE7782" Ref="R?"  Part="1" 
+AR Path="/5FA9BBC5/5FCE7782" Ref="R?"  Part="1" 
+AR Path="/5FA9D4E1/5FCE7782" Ref="R?"  Part="1" 
+AR Path="/5FAA7870/5FCE7782" Ref="R?"  Part="1" 
+AR Path="/5FCE7782" Ref="R39"  Part="1" 
+F 0 "R39" V 11200 6700 50  0000 L CNN
+F 1 "100K" V 11300 6700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11030 6800 50  0001 C CNN
+F 3 "~" H 11100 6800 50  0001 C CNN
+F 4 "71-CRCW0805100KFKEAC" H 11100 6800 50  0001 C CNN "DPN"
+	1    11100 6800
+	0    1    1    0   
+$EndComp
+Text GLabel 11750 6500 2    50   UnSpc ~ 0
+5VDC
+Wire Wire Line
+	11750 6500 11650 6500
+Wire Wire Line
+	11650 6500 11650 6650
+Wire Wire Line
+	11250 6800 11650 6800
+Wire Wire Line
+	11750 6650 11650 6650
+Wire Wire Line
+	11650 6650 11650 6800
+Wire Wire Line
+	10850 6650 10950 6650
+NoConn ~ 3700 1800
+Connection ~ 11650 6650
+Wire Wire Line
+	10250 6800 10850 6800
+Wire Wire Line
+	10850 6650 10850 6800
+Connection ~ 10850 6800
+Wire Wire Line
+	10850 6800 10950 6800
+Text GLabel 4950 10850 0    50   Input ~ 0
+S6
+Text GLabel 8450 4700 0    50   Input ~ 0
+SW_Top
+Wire Wire Line
+	8450 4700 8550 4700
+Connection ~ 8550 4700
+Wire Wire Line
+	8550 4700 8550 5000
+$Comp
+L Switch:SW_DIP_x04 SW1
+U 1 1 5FE55576
+P 5350 10950
+F 0 "SW1" H 5350 11417 50  0000 C CNN
+F 1 "SW_DIP_x04" H 5350 11326 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 5350 10950 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/ds01_254-1777712%20(5).pdf" H 5350 10950 50  0001 C CNN
+F 4 "DS01C-254-S-04BE" H 5350 10950 50  0001 C CNN "DPN"
+	1    5350 10950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 10850 2    50   Input ~ 0
+SW_NotTop
+Wire Wire Line
+	5750 10850 5650 10850
+Wire Wire Line
+	1500 5200 7500 5200
+Wire Wire Line
+	5050 10750 4950 10750
+Text GLabel 4950 10750 0    50   Input ~ 0
+S6
+Text GLabel 6900 4050 0    50   Input ~ 0
+SW_NotTop
+Wire Wire Line
+	6900 4050 7000 4050
+Connection ~ 7000 4050
 $EndSCHEMATC
