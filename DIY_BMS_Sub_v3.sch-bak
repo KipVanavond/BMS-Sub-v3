@@ -479,18 +479,18 @@ Text GLabel 10350 7500 2    50   Input ~ 0
 FAULT_H
 Wire Wire Line
 	10350 7500 10250 7500
-Text GLabel 3750 2450 0    50   Input ~ 0
+Text GLabel 3550 2100 0    50   Input ~ 0
 FAULT_H
 Wire Wire Line
-	3750 2450 3850 2450
+	3550 2100 3650 2100
 Text GLabel 10350 7600 2    50   Input ~ 0
 ALERT_H
 Wire Wire Line
 	10350 7600 10250 7600
-Text GLabel 3750 2350 0    50   Input ~ 0
+Text GLabel 3550 2000 0    50   Input ~ 0
 ALERT_H
 Wire Wire Line
-	3750 2350 3850 2350
+	3550 2000 3650 2000
 Text GLabel 10350 7700 2    50   Input ~ 0
 DRDY_H
 Wire Wire Line
@@ -644,7 +644,7 @@ Text GLabel 10600 4950 0    50   UnSpc ~ 0
 AGND
 Wire Wire Line
 	10350 5350 10700 5350
-Text GLabel 12100 5350 2    50   UnSpc ~ 0
+Text GLabel 12250 5350 2    50   UnSpc ~ 0
 5VDC
 Connection ~ 10700 5350
 Text GLabel 2250 2150 2    50   Input ~ 0
@@ -1286,9 +1286,8 @@ F 4 "C1663" H 11600 5550 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	10700 5350 11600 5350
-Connection ~ 12000 5350
 Wire Wire Line
-	12000 5350 12100 5350
+	12150 5350 12250 5350
 Wire Wire Line
 	11600 5350 11600 5400
 Connection ~ 11600 5350
@@ -1381,10 +1380,6 @@ Wire Wire Line
 Wire Wire Line
 	10700 6400 10250 6400
 Connection ~ 10700 6400
-Text GLabel 11150 6400 2    50   Input ~ 0
-TSB
-Wire Wire Line
-	11150 6400 11050 6400
 Wire Wire Line
 	10350 6500 10250 6500
 Text GLabel 2250 2250 2    50   UnSpc ~ 0
@@ -1456,13 +1451,13 @@ Wire Wire Line
 $Comp
 L Device:C C26
 U 1 1 612E89FE
-P 12000 5950
-F 0 "C26" V 12150 6000 50  0000 L CNN
-F 1 "33p" V 12150 5800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12038 5800 50  0001 C CNN
-F 3 "file:///C:/Users/HenkHenk/Downloads/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf" H 12000 5950 50  0001 C CNN
-F 4 "C1663" H 12000 5950 50  0001 C CNN "LCSC"
-	1    12000 5950
+P 12150 5950
+F 0 "C26" H 11950 6050 50  0000 L CNN
+F 1 "33p" H 11950 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12188 5800 50  0001 C CNN
+F 3 "file:///C:/Users/HenkHenk/Downloads/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf" H 12150 5950 50  0001 C CNN
+F 4 "C1663" H 12150 5950 50  0001 C CNN "LCSC"
+	1    12150 5950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1471,18 +1466,38 @@ Wire Wire Line
 	11800 6100 10700 6100
 Connection ~ 10700 6100
 Connection ~ 11650 6800
-Wire Wire Line
-	12000 6100 12000 6500
-Wire Wire Line
-	12000 6500 10700 6500
 Connection ~ 10700 6500
 Wire Wire Line
-	12000 5350 12000 5800
+	12150 5350 12150 5800
 Wire Wire Line
 	11800 5600 11800 5350
 Connection ~ 11800 5350
+NoConn ~ 3650 2000
+NoConn ~ 3650 2100
+$Comp
+L Device:Thermistor TH?
+U 1 1 613A86B3
+P 12000 6200
+F 0 "TH?" H 12100 6200 50  0000 L CNN
+F 1 "10K NTC" H 12050 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 12000 6200 50  0001 C CNN
+F 3 "https://eu.mouser.com/ProductDetail/Panasonic/ERT-J1VG103FA?qs=Tap6ps20mlMpYFuAQ7bHkg%3D%3D" H 12000 6200 50  0001 C CNN
+F 4 "ERT-J1VG103FA" H 12000 6200 50  0001 C CNN "DPN"
+	1    12000 6200
+	-1   0    0    1   
+$EndComp
+Connection ~ 12150 5350
+Wire Wire Line
+	12150 6100 12150 6500
 Wire Wire Line
 	11800 5350 12000 5350
-NoConn ~ 3850 2350
-NoConn ~ 3850 2450
+Wire Wire Line
+	10700 6500 12150 6500
+Wire Wire Line
+	11050 6400 12000 6400
+Wire Wire Line
+	12000 6000 12000 5350
+Connection ~ 12000 5350
+Wire Wire Line
+	12000 5350 12150 5350
 $EndSCHEMATC
