@@ -439,26 +439,26 @@ F 4 "C1663" H 7950 3750 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 4950 11050 0    50   UnSpc ~ 0
 AGND
-Text GLabel 6450 2100 0    50   Input ~ 0
+Text GLabel 6450 1900 0    50   Input ~ 0
 CS_S
 Wire Wire Line
-	6450 2100 6550 2100
-Text GLabel 7150 2100 2    50   Input ~ 0
+	6450 1900 6550 1900
+Text GLabel 7150 1900 2    50   Input ~ 0
 SDI_S
 Wire Wire Line
-	7150 2100 7050 2100
+	7150 1900 7050 1900
 Text GLabel 6450 2000 0    50   Input ~ 0
 SDO_S
 Wire Wire Line
 	6450 2000 6550 2000
-Text GLabel 7150 1900 2    50   Input ~ 0
+Text GLabel 7150 2200 2    50   Input ~ 0
 CONV_S
 Wire Wire Line
-	7150 1900 7050 1900
-Text GLabel 6450 1900 0    50   Input ~ 0
+	7150 2200 7050 2200
+Text GLabel 6450 2200 0    50   Input ~ 0
 DRDY_S
 Wire Wire Line
-	6450 1900 6550 1900
+	6450 2200 6550 2200
 NoConn ~ 10250 5500
 NoConn ~ 10250 5200
 NoConn ~ 10250 5300
@@ -479,34 +479,34 @@ Text GLabel 10350 7500 2    50   Input ~ 0
 FAULT_H
 Wire Wire Line
 	10350 7500 10250 7500
-Text GLabel 3550 2100 0    50   Input ~ 0
+Text GLabel 3100 1550 0    50   Input ~ 0
 FAULT_H
 Wire Wire Line
-	3550 2100 3650 2100
+	3100 1550 3200 1550
 Text GLabel 10350 7600 2    50   Input ~ 0
 ALERT_H
 Wire Wire Line
 	10350 7600 10250 7600
-Text GLabel 3550 2000 0    50   Input ~ 0
+Text GLabel 3800 1650 2    50   Input ~ 0
 ALERT_H
 Wire Wire Line
-	3550 2000 3650 2000
+	3800 1650 3700 1650
 Text GLabel 10350 7700 2    50   Input ~ 0
 DRDY_H
 Wire Wire Line
 	10350 7700 10250 7700
-Text GLabel 3800 1650 2    50   Input ~ 0
+Text GLabel 3100 1650 0    50   Input ~ 0
 DRDY_H
 Wire Wire Line
-	3800 1650 3700 1650
+	3100 1650 3200 1650
 Text GLabel 10350 7800 2    50   Input ~ 0
 CONV_H
 Wire Wire Line
 	10350 7800 10250 7800
-Text GLabel 3100 1550 0    50   Input ~ 0
+Text GLabel 3800 1750 2    50   Input ~ 0
 CONV_H
 Wire Wire Line
-	3100 1550 3200 1550
+	3800 1750 3700 1750
 NoConn ~ 10250 6300
 Wire Wire Line
 	10250 8700 10250 8900
@@ -805,10 +805,8 @@ LDOD
 Wire Wire Line
 	12000 8150 11900 8150
 Connection ~ 11900 8150
-Text GLabel 3100 1650 0    50   Output ~ 0
-LDOD
 Wire Wire Line
-	3100 1650 3200 1650
+	3100 1750 3200 1750
 $Comp
 L Device:C C?
 U 1 1 6021BE32
@@ -976,67 +974,30 @@ Text Label 1450 6850 0    50   ~ 0
 C4
 Text Label 1450 6250 0    50   ~ 0
 C5
-$Comp
-L Connector_Generic:Conn_02x03_Top_Bottom J3
-U 1 1 611295F6
-P 5150 2000
-F 0 "J3" H 5200 2317 50  0000 C CNN
-F 1 "Conn_02x03_Top_Bottom" H 5200 2226 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" H 5150 2000 50  0001 C CNN
-F 3 "~" H 5150 2000 50  0001 C CNN
-	1    5150 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4850 1900 4950 1900
-Text GLabel 4850 1900 0    50   Input ~ 0
+	4850 2200 4950 2200
+Text GLabel 4850 2200 0    50   Input ~ 0
 DRDY_N
-Text GLabel 4850 2100 0    50   Input ~ 0
+Text GLabel 4850 1900 0    50   Input ~ 0
 CS_N
 Wire Wire Line
-	4850 2100 4950 2100
+	4850 1900 4950 1900
 Text GLabel 4850 2000 0    50   Input ~ 0
 SDO_N
 Wire Wire Line
 	4850 2000 4950 2000
-Text GLabel 5550 1900 2    50   Input ~ 0
+Text GLabel 5550 2200 2    50   Input ~ 0
 CONV_N
 Wire Wire Line
-	5550 1900 5450 1900
-Text GLabel 5550 2100 2    50   Input ~ 0
+	5550 2200 5450 2200
+Text GLabel 5550 1900 2    50   Input ~ 0
 SDI_N
 Wire Wire Line
-	5550 2100 5450 2100
+	5550 1900 5450 1900
 Text GLabel 5550 2000 2    50   Input ~ 0
 SCLK_N
 Wire Wire Line
 	5550 2000 5450 2000
-$Comp
-L Connector_Generic:Conn_02x03_Top_Bottom J4
-U 1 1 611FE51D
-P 6750 2000
-F 0 "J4" H 6800 2317 50  0000 C CNN
-F 1 "Conn_02x03_Top_Bottom" H 6800 2226 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" H 6750 2000 50  0001 C CNN
-F 3 "~" H 6750 2000 50  0001 C CNN
-	1    6750 2000
-	1    0    0    -1  
-$EndComp
-Text GLabel 7150 2000 2    50   Input ~ 0
-SCLK_S
-Wire Wire Line
-	7150 2000 7050 2000
-$Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J2
-U 1 1 6118D8B5
-P 3400 1450
-F 0 "J2" H 3450 1767 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 3450 1676 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0821_2x04-1MP_P3.00mm_Horizontal" H 3400 1450 50  0001 C CNN
-F 3 "~" H 3400 1450 50  0001 C CNN
-	1    3400 1450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x11 J1
 U 1 1 611AF9E2
@@ -1080,12 +1041,10 @@ Wire Wire Line
 	1350 7450 3600 7450
 Text Label 1450 7450 0    50   ~ 0
 C3
-NoConn ~ 8750 9750
-NoConn ~ 8850 9750
 $Comp
 L Device:R R?
 U 1 1 612B0B90
-P 8650 10350
+P 9050 10000
 AR Path="/5FAF2B15/612B0B90" Ref="R?"  Part="1" 
 AR Path="/5FB201DB/612B0B90" Ref="R?"  Part="1" 
 AR Path="/5FB24C66/612B0B90" Ref="R?"  Part="1" 
@@ -1093,26 +1052,7 @@ AR Path="/5FA9BBC5/612B0B90" Ref="R?"  Part="1"
 AR Path="/5FA9D4E1/612B0B90" Ref="R?"  Part="1" 
 AR Path="/5FAA7870/612B0B90" Ref="R?"  Part="1" 
 AR Path="/612B0B90" Ref="R41"  Part="1" 
-F 0 "R41" V 8850 10300 50  0000 L CNN
-F 1 "1k" V 8750 10300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8580 10350 50  0001 C CNN
-F 3 "~" H 8650 10350 50  0001 C CNN
-F 4 "C21190" V 8650 10350 50  0001 C CNN "LCSC"
-	1    8650 10350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 612BC744
-P 9050 10000
-AR Path="/5FAF2B15/612BC744" Ref="R?"  Part="1" 
-AR Path="/5FB201DB/612BC744" Ref="R?"  Part="1" 
-AR Path="/5FB24C66/612BC744" Ref="R?"  Part="1" 
-AR Path="/5FA9BBC5/612BC744" Ref="R?"  Part="1" 
-AR Path="/5FA9D4E1/612BC744" Ref="R?"  Part="1" 
-AR Path="/5FAA7870/612BC744" Ref="R?"  Part="1" 
-AR Path="/612BC744" Ref="R42"  Part="1" 
-F 0 "R42" V 9250 9950 50  0000 L CNN
+F 0 "R41" V 9250 9950 50  0000 L CNN
 F 1 "1k" V 9150 9950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8980 10000 50  0001 C CNN
 F 3 "~" H 9050 10000 50  0001 C CNN
@@ -1122,8 +1062,27 @@ F 4 "C21190" V 9050 10000 50  0001 C CNN "LCSC"
 $EndComp
 $Comp
 L Device:R R?
+U 1 1 612BC744
+P 8850 10950
+AR Path="/5FAF2B15/612BC744" Ref="R?"  Part="1" 
+AR Path="/5FB201DB/612BC744" Ref="R?"  Part="1" 
+AR Path="/5FB24C66/612BC744" Ref="R?"  Part="1" 
+AR Path="/5FA9BBC5/612BC744" Ref="R?"  Part="1" 
+AR Path="/5FA9D4E1/612BC744" Ref="R?"  Part="1" 
+AR Path="/5FAA7870/612BC744" Ref="R?"  Part="1" 
+AR Path="/612BC744" Ref="R42"  Part="1" 
+F 0 "R42" V 9050 10900 50  0000 L CNN
+F 1 "1k" V 8950 10900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8780 10950 50  0001 C CNN
+F 3 "~" H 8850 10950 50  0001 C CNN
+F 4 "C21190" V 8850 10950 50  0001 C CNN "LCSC"
+	1    8850 10950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
 U 1 1 612C873E
-P 9150 10350
+P 8750 10650
 AR Path="/5FAF2B15/612C873E" Ref="R?"  Part="1" 
 AR Path="/5FB201DB/612C873E" Ref="R?"  Part="1" 
 AR Path="/5FB24C66/612C873E" Ref="R?"  Part="1" 
@@ -1131,18 +1090,18 @@ AR Path="/5FA9BBC5/612C873E" Ref="R?"  Part="1"
 AR Path="/5FA9D4E1/612C873E" Ref="R?"  Part="1" 
 AR Path="/5FAA7870/612C873E" Ref="R?"  Part="1" 
 AR Path="/612C873E" Ref="R43"  Part="1" 
-F 0 "R43" V 9350 10300 50  0000 L CNN
-F 1 "1k" V 9250 10300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 10350 50  0001 C CNN
-F 3 "~" H 9150 10350 50  0001 C CNN
-F 4 "C21190" V 9150 10350 50  0001 C CNN "LCSC"
-	1    9150 10350
+F 0 "R43" V 8950 10600 50  0000 L CNN
+F 1 "1k" V 8850 10600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8680 10650 50  0001 C CNN
+F 3 "~" H 8750 10650 50  0001 C CNN
+F 4 "C21190" V 8750 10650 50  0001 C CNN "LCSC"
+	1    8750 10650
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 612D482A
-P 9250 10650
+P 8650 10350
 AR Path="/5FAF2B15/612D482A" Ref="R?"  Part="1" 
 AR Path="/5FB201DB/612D482A" Ref="R?"  Part="1" 
 AR Path="/5FB24C66/612D482A" Ref="R?"  Part="1" 
@@ -1150,31 +1109,12 @@ AR Path="/5FA9BBC5/612D482A" Ref="R?"  Part="1"
 AR Path="/5FA9D4E1/612D482A" Ref="R?"  Part="1" 
 AR Path="/5FAA7870/612D482A" Ref="R?"  Part="1" 
 AR Path="/612D482A" Ref="R44"  Part="1" 
-F 0 "R44" V 9450 10600 50  0000 L CNN
-F 1 "1k" V 9350 10600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9180 10650 50  0001 C CNN
-F 3 "~" H 9250 10650 50  0001 C CNN
-F 4 "C21190" V 9250 10650 50  0001 C CNN "LCSC"
-	1    9250 10650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 612EC730
-P 9350 10950
-AR Path="/5FAF2B15/612EC730" Ref="R?"  Part="1" 
-AR Path="/5FB201DB/612EC730" Ref="R?"  Part="1" 
-AR Path="/5FB24C66/612EC730" Ref="R?"  Part="1" 
-AR Path="/5FA9BBC5/612EC730" Ref="R?"  Part="1" 
-AR Path="/5FA9D4E1/612EC730" Ref="R?"  Part="1" 
-AR Path="/5FAA7870/612EC730" Ref="R?"  Part="1" 
-AR Path="/612EC730" Ref="R45"  Part="1" 
-F 0 "R45" V 9550 10900 50  0000 L CNN
-F 1 "1k" V 9450 10900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9280 10950 50  0001 C CNN
-F 3 "~" H 9350 10950 50  0001 C CNN
-F 4 "C21190" V 9350 10950 50  0001 C CNN "LCSC"
-	1    9350 10950
+F 0 "R44" V 8850 10300 50  0000 L CNN
+F 1 "1k" V 8750 10300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8580 10350 50  0001 C CNN
+F 3 "~" H 8650 10350 50  0001 C CNN
+F 4 "C21190" V 8650 10350 50  0001 C CNN "LCSC"
+	1    8650 10350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1219,7 +1159,7 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 6127E907
-P 8550 10050
+P 9150 10350
 AR Path="/5FAF2B15/6127E907" Ref="R?"  Part="1" 
 AR Path="/5FB201DB/6127E907" Ref="R?"  Part="1" 
 AR Path="/5FB24C66/6127E907" Ref="R?"  Part="1" 
@@ -1227,12 +1167,12 @@ AR Path="/5FA9BBC5/6127E907" Ref="R?"  Part="1"
 AR Path="/5FA9D4E1/6127E907" Ref="R?"  Part="1" 
 AR Path="/5FAA7870/6127E907" Ref="R?"  Part="1" 
 AR Path="/6127E907" Ref="R40"  Part="1" 
-F 0 "R40" V 8750 10000 50  0000 L CNN
-F 1 "1k" V 8650 10000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8480 10050 50  0001 C CNN
-F 3 "~" H 8550 10050 50  0001 C CNN
-F 4 "C21190" V 8550 10050 50  0001 C CNN "LCSC"
-	1    8550 10050
+F 0 "R40" V 9350 10300 50  0000 L CNN
+F 1 "1k" V 9250 10300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 10350 50  0001 C CNN
+F 3 "~" H 9150 10350 50  0001 C CNN
+F 4 "C21190" V 9150 10350 50  0001 C CNN "LCSC"
+	1    9150 10350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1472,8 +1412,6 @@ Wire Wire Line
 Wire Wire Line
 	11800 5600 11800 5350
 Connection ~ 11800 5350
-NoConn ~ 3650 2000
-NoConn ~ 3650 2100
 $Comp
 L Device:Thermistor TH1
 U 1 1 613A86B3
@@ -1500,4 +1438,130 @@ Wire Wire Line
 Connection ~ 12000 5350
 Wire Wire Line
 	12000 5350 12150 5350
+$Comp
+L Connector_Generic:Conn_02x04_Top_Bottom J3
+U 1 1 6140FE80
+P 5150 2000
+F 0 "J3" H 5200 2317 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 5200 2226 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0800_2x04_P3.00mm_Horizontal" H 5150 2000 50  0001 C CNN
+F 3 "~" H 5150 2000 50  0001 C CNN
+F 4 "538-43045-0800" H 5150 2000 50  0001 C CNN "DPN"
+	1    5150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Top_Bottom J4
+U 1 1 6143BB55
+P 6750 2000
+F 0 "J4" H 6800 2317 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 6800 2226 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0800_2x04_P3.00mm_Horizontal" H 6750 2000 50  0001 C CNN
+F 3 "~" H 6750 2000 50  0001 C CNN
+F 4 "538-43045-0800" H 6750 2000 50  0001 C CNN "DPN"
+	1    6750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614705F0
+P 9350 10950
+AR Path="/5FAF2B15/614705F0" Ref="R?"  Part="1" 
+AR Path="/5FB201DB/614705F0" Ref="R?"  Part="1" 
+AR Path="/5FB24C66/614705F0" Ref="R?"  Part="1" 
+AR Path="/5FA9BBC5/614705F0" Ref="R?"  Part="1" 
+AR Path="/5FA9D4E1/614705F0" Ref="R?"  Part="1" 
+AR Path="/5FAA7870/614705F0" Ref="R?"  Part="1" 
+AR Path="/614705F0" Ref="R51"  Part="1" 
+F 0 "R51" V 9550 10900 50  0000 L CNN
+F 1 "1k" V 9450 10900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9280 10950 50  0001 C CNN
+F 3 "~" H 9350 10950 50  0001 C CNN
+F 4 "C21190" V 9350 10950 50  0001 C CNN "LCSC"
+	1    9350 10950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6147F6CB
+P 9250 10650
+AR Path="/5FAF2B15/6147F6CB" Ref="R?"  Part="1" 
+AR Path="/5FB201DB/6147F6CB" Ref="R?"  Part="1" 
+AR Path="/5FB24C66/6147F6CB" Ref="R?"  Part="1" 
+AR Path="/5FA9BBC5/6147F6CB" Ref="R?"  Part="1" 
+AR Path="/5FA9D4E1/6147F6CB" Ref="R?"  Part="1" 
+AR Path="/5FAA7870/6147F6CB" Ref="R?"  Part="1" 
+AR Path="/6147F6CB" Ref="R50"  Part="1" 
+F 0 "R50" V 9450 10600 50  0000 L CNN
+F 1 "1k" V 9350 10600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9180 10650 50  0001 C CNN
+F 3 "~" H 9250 10650 50  0001 C CNN
+F 4 "C21190" V 9250 10650 50  0001 C CNN "LCSC"
+	1    9250 10650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 10800 8850 9750
+Wire Wire Line
+	8750 9750 8750 10500
+Wire Wire Line
+	8750 10800 8750 11200
+Wire Wire Line
+	8850 11100 8850 11200
+Text GLabel 8850 11200 3    50   Input ~ 0
+FAULT_S
+Text GLabel 8750 11200 3    50   Input ~ 0
+ALERT_S
+$Comp
+L Connector_Generic:Conn_02x05_Top_Bottom J5
+U 1 1 613DFC93
+P 3400 1550
+F 0 "J5" H 3450 1967 50  0000 C CNN
+F 1 "Conn_02x05_Top_Bottom" H 3450 1876 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal" H 3400 1550 50  0001 C CNN
+F 3 "~" H 3400 1550 50  0001 C CNN
+	1    3400 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 1750 0    50   UnSpc ~ 0
+5VDC
+$Comp
+L Device:R R?
+U 1 1 612EC730
+P 8550 10050
+AR Path="/5FAF2B15/612EC730" Ref="R?"  Part="1" 
+AR Path="/5FB201DB/612EC730" Ref="R?"  Part="1" 
+AR Path="/5FB24C66/612EC730" Ref="R?"  Part="1" 
+AR Path="/5FA9BBC5/612EC730" Ref="R?"  Part="1" 
+AR Path="/5FA9D4E1/612EC730" Ref="R?"  Part="1" 
+AR Path="/5FAA7870/612EC730" Ref="R?"  Part="1" 
+AR Path="/612EC730" Ref="R45"  Part="1" 
+F 0 "R45" V 8750 10000 50  0000 L CNN
+F 1 "1k" V 8650 10000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8480 10050 50  0001 C CNN
+F 3 "~" H 8550 10050 50  0001 C CNN
+F 4 "C21190" V 8550 10050 50  0001 C CNN "LCSC"
+	1    8550 10050
+	-1   0    0    1   
+$EndComp
+Text GLabel 6450 2100 0    50   Input ~ 0
+FAULT_S
+Text GLabel 7150 2100 2    50   Input ~ 0
+ALERT_S
+Wire Wire Line
+	7150 2100 7050 2100
+Wire Wire Line
+	6450 2100 6550 2100
+Wire Wire Line
+	7150 2000 7050 2000
+Text GLabel 7150 2000 2    50   Input ~ 0
+SCLK_S
+Text GLabel 4850 2100 0    50   Input ~ 0
+FAULT_N
+Text GLabel 5550 2100 2    50   Input ~ 0
+ALERT_N
+Wire Wire Line
+	4850 2100 4950 2100
+Wire Wire Line
+	5550 2100 5450 2100
 $EndSCHEMATC
